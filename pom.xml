@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.shiverawe</groupId>
+    <artifactId>shedis</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+
+    <!--================================REDIS================================-->
+        <dependency>
+            <groupId>com.github.kstyrc</groupId>
+            <artifactId>embedded-redis</artifactId>
+            <version>0.6</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/net.debasishg/redisclient -->
+        <dependency>
+            <groupId>net.debasishg</groupId>
+            <artifactId>redisclient_2.11</artifactId>
+            <version>3.4</version>
+        </dependency>
+
+    <!--================================SCALA TEST===========================-->
+        <!-- https://mvnrepository.com/artifact/org.scalatest/scalatest-all -->
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest-all_2.11</artifactId>
+            <version>3.0.0-M11</version>
+        </dependency>
+    </dependencies>
+
+</project>
