@@ -1,7 +1,7 @@
 package com.github.shiverawe.shedis.directive
 
 import com.redis.RedisClient
-import com.github.shiverawe.shedis.directive.collections.{BinderDirective, ListDirective, MapDirective}
+import com.github.shiverawe.shedis.directive.collections.{ShedisBinder, ShedisList, ShedisMap}
 import com.github.shiverawe.shedis.directive.values.PlainValue
 import com.github.shiverawe.shedis.operations.SgdeOperations
 
@@ -15,12 +15,12 @@ case class WrapperDirective(client: RedisClient, key: String) extends KeyDirecti
   def value: SgdeOperations =
     PlainValue(client, key)
 
-  def map: MapDirective =
-    MapDirective(client, key)
+  def map: ShedisMap =
+    ShedisMap(client, key)
 
-  def list: ListDirective =
-    ListDirective(client, key)
+  def list: ShedisList =
+    ShedisList(client, key)
 
-  def binder: BinderDirective =
-    BinderDirective(client, key)
+  def binder: ShedisBinder =
+    ShedisBinder(client, key)
 }

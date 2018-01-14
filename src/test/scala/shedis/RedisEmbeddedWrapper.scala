@@ -1,4 +1,4 @@
-package com.github.shiverawe.shedis
+package shedis
 
 import com.redis.RedisClient
 import redis.embedded.RedisServer

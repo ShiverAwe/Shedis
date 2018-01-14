@@ -1,8 +1,8 @@
 package shedis
 
-import com.github.shiverawe.shedis.RedisEmbeddedWrapper
+import RedisEmbeddedWrapper
 import org.scalatest.FlatSpec
-import com.github.shiverawe.shedis.directive.collections.MapDirective
+import com.github.shiverawe.shedis.directive.collections.ShedisMap
 
 class MapOperationsSpec extends FlatSpec with RedisSpec {
 
@@ -19,8 +19,8 @@ class MapOperationsSpec extends FlatSpec with RedisSpec {
     val FIELD = "field"
     val VALUE = "value"
     val FIELD_NOT_EXISTS = "j7b5d4kc2o6lsn6r2l5sdf6wer87cw6"
-    val MAP = MapDirective(redisClient, KEY)
-    val MAP_NOT_EXISTS = MapDirective(redisClient, "mwcreomq6cwer146wqr84cqwe6")
+    val MAP = ShedisMap(redisClient, KEY)
+    val MAP_NOT_EXISTS = ShedisMap(redisClient, "mwcreomq6cwer146wqr84cqwe6")
 
     //--------------------------------TESTS---------------------------------------
 

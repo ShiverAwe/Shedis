@@ -1,6 +1,6 @@
 package shedis
 
-import com.github.shiverawe.shedis.RedisEmbeddedWrapper
+import RedisEmbeddedWrapper
 import org.scalatest.{BeforeAndAfterEach, Suite}
 
 trait RedisSpec extends BeforeAndAfterEach{
